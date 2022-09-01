@@ -8,4 +8,4 @@ Backend написан с помощью фреймворка Express. База 
 https://api.dipmovies.nomoredomains.sbs
 
 Публичный IP-адрес сервера
-62.84.119.223
+51.250.4.42
