@@ -1,13 +1,16 @@
 {
-  "name": "level-1",
+  "name": "movies-explorer-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
     "dev": "nodemon app.js",
     "lint": "npx eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisR81/movies-explorer-api.git"
   },
   "keywords": [],
   "author": "Denis Reshetnyak",
