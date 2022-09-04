@@ -21,7 +21,7 @@ module.exports.updateUser = (req, res, next) => {
   )
     .then((user) => res.send(user))
     .catch((err) => {
-      if (err.name === 'MongoServerError') {
+      if (err.code === 11000) {
         next(new ErrorConflict(EMAILREGISTERED_MSG));
       } else {
         next(err);
@@ -40,7 +40,7 @@ module.exports.signup = (req, res, next) => {
         res.send(newUser);
       }))
     .catch((err) => {
-      if (err.name === 'MongoServerError') {
+      if (err.code === 11000) {
         next(new ErrorConflict(EMAILREGISTERED_MSG));
       } else {
         next(err);

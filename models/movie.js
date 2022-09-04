@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
+const { VALIDERROR_MSG } = require('../utils/constants');
 
 const movieSchema = new mongoose.Schema({
   country: {
@@ -35,7 +36,7 @@ const movieSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator: (v) => validator.isURL(v),
-      message: () => 'Ошибка валидации поля image',
+      message: () => VALIDERROR_MSG,
     },
   },
 
@@ -44,7 +45,7 @@ const movieSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator: (v) => validator.isURL(v),
-      message: () => 'Ошибка валидации поля trailer',
+      message: () => VALIDERROR_MSG,
     },
   },
 
@@ -53,7 +54,7 @@ const movieSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator: (v) => validator.isURL(v),
-      message: () => 'Ошибка валидации поля thumbnail',
+      message: () => VALIDERROR_MSG,
     },
   },
 

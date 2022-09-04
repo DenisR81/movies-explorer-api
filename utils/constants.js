@@ -16,6 +16,7 @@ const AUTHREQUIRED_MSG = 'Необходима авторизация';
 const INVALIDPATH_MSG = 'Некорректный путь запроса';
 const MOVIEDELETED_MSG = 'Фильм удалён';
 const CANTDELETEFILM_MSG = 'Нельзя удалять чужие фильмы';
+const VALIDERROR_MSG = 'Ошибка валидации';
 
 module.exports = {
   BADREQUEST_CODE,
@@ -35,4 +36,5 @@ module.exports = {
   INVALIDPATH_MSG,
   MOVIEDELETED_MSG,
   CANTDELETEFILM_MSG,
+  VALIDERROR_MSG,
 };
