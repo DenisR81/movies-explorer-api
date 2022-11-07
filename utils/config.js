@@ -7,9 +7,10 @@ const jwtSettings = {
 };
 
 const cookieSettings = {
-  httpOnly: true,
-  sameSite: true,
   maxAge: 3600000 * 24 * 7,
+  httpOnly: true,
+  sameSite: 'none',
+  secure: true,
 };
 
 const corsSettings = {
